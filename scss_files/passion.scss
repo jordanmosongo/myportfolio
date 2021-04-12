@@ -1,0 +1,41 @@
+@import "../main.scss";
+
+.passion__container{
+    .row-container{
+        @include flex-one();
+        @media (max-width:540px) {
+            @include flex-two();
+        }
+        .passion-workspace{    
+            @media (max-width:540px) {
+                order: 2;
+            }      
+            img{
+                width: 100%;
+            }
+        }
+        .passion-talent{
+            @include flex-two();
+            justify-content: flex-start;
+            box-sizing: border-box;
+            @media (max-width:540px) {
+                order: 1;
+                
+            }
+            h2{
+                margin-top: -20px;
+                font-family: $family-roboto;
+                font-size: 2.5em;
+                color: $color-blue;
+                @media (max-width:768px) {
+                    font-size: 1.8em;   
+                }
+            }
+            p{
+                @include text-appearance($color-gray);
+            }
+        
+        }
+    }
+   
+}
