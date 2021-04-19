@@ -8,14 +8,15 @@
 
 .photo {
   padding: 0;
-  margin: 0;
   position: relative;
-  background-color: #3c3d71;
+  background-color: #4a4b70;
   position: relative;
 }
 .photo img {
   width: 100%;
   opacity: 0.5;
+  margin: 0;
+  padding: 0;
 }
 .photo h2 {
   color: #ffffff;

@@ -50,13 +50,13 @@
   }
 }
 .passion__container .row-container .passion-talent p {
-  font-size: 24px;
+  font-size: 22px;
   color: #2a2527;
   font-family: "Roboto", sans-serif;
 }
 @media (min-width: 768px) and (max-width: 1420px) {
   .passion__container .row-container .passion-talent p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {

@@ -27,53 +27,16 @@ function createSkill(parent, skillTechnology, skillImage){
     parent.appendChild(skillContainer);
 }
 function createProject(parent,projectTitle ,projectImage, technoList, siteWeb, gitHub){
-    let element = document.createElement('div');
-    let techno = document.createElement('div');    
-    let titre = document.createElement('h3');   
-    let list = document.createElement('p');   
-    let technoLink = document.createElement('div');
-    let webSiteLink = document.createElement('a');    
-    let gitHubLink = document.createElement('a');
-    let iconSite = document.createElement('i');
-    let iconGit = document.createElement('i');
-    
-    element.classList.add('first-element');
-    element.style.backgroundImage = `url(${projectImage})`;
-    techno.classList.add('technos');
-    titre.textContent = projectTitle;
-    titre.classList.add('technos-title');
-    list.textContent = "";
-    technoList.forEach(item => {
-       list.textContent += item + " "; 
-     });
-     list.classList.add('technos-list')
-    technoLink.classList.add('technos-link');
-    webSiteLink.setAttribute('href', siteWeb);
-    
-    iconSite.classList.add('fas', 'fa-link', 'fa-2x');
-    webSiteLink.appendChild(iconSite);
-    
-    gitHubLink.setAttribute('href', gitHub);
-    
-    iconGit.classList.add('fab', 'fa-github', 'fa-2x');
-    gitHubLink.appendChild(iconGit);
-      
-    technoLink.append(webSiteLink, gitHubLink);
-    techno.append(titre, list, technoLink);
-    element.appendChild(techno);
-    element.setAttribute('data-aos', 'zoom-in');
-    parent.appendChild(element);
-    
+     
 }
 
 //getting identity
 //fetch("https://my-json-server.typicode.com/jordanmosongo/portfolio/identity")
 fetch("http://localhost:3000/identity")  
-.then(response => {
+    .then(response => {
         return response.json();
     })
     .then(data => {
-        //description.textContent = data.textDescriptif;
         telephone.textContent = data.telephone;
         facebook.setAttribute('href', data.facebook);
         
@@ -86,6 +49,7 @@ fetch("http://localhost:3000/skills")
             return response.json();
     })
     .then(arrayOfSkills => {
+        console.log(arrayOfSkills);
         for(let index in arrayOfSkills){
             if(index <= 2) {
                 createSkill(firstRowOfSkills, arrayOfSkills[index].technology, 

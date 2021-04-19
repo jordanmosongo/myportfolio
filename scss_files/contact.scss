@@ -1,76 +1,124 @@
 @import "../main.scss";
 .contact{
-    background-color: $color-blue;
+    background-color: #4a4b70;
     position: relative;
     overflow: hidden;  
-    @include flex-two();
-    justify-content: center; 
-    h2{
-        @include sub-title($color-white, $color-white);
-    } 
-    .container-content{
-        padding-bottom: 10px;
-       .row{
-            @include flex-one();
-            justify-content: center;  
-            .contact__message{
-                form{
-                    background-color: $color-white;
-                    padding: 50px 20px;
-                    box-sizing: border-box;
-                    width: 100%;
-                    box-shadow: 10px 10px 10px black;
-                    border-radius: 10px;                    
-                    .form-content{
-                        .form-group{
-                            margin-bottom: 5px;
-                            box-sizing: border-box;
-                            label{
-                                @include text-appearance($color-blue);
-                                font-size: 18px;
-                            }
-                            input, select{
-                                @include text-appearance($color-gray);
-                                font-size: 18px;
-                                border-bottom:2px solid $color-blue;
-                                &:focus{
-                                    outline: none;
-                                    border-bottom: 2px solid $color-yellow;
-                                }
-                            }
-                            
-                            textarea{
-                                height: 3em;
-                                border:none;
-                                border-bottom: 2px solid $color-blue;
-                                @include text-appearance($color-gray);
-                                font-size: 18px;
-                                &:focus{
-                                    outline: none;
-                                    border-bottom: 2px solid $color-yellow;
-                                }
-                            }                           
+    padding: 80px 0;
+
+    .container{
+        background-color: $color-white;
+        @include flex-one();
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px $color-gray;
+        .contact__info{
+            width: 49%;
+            height: 100%;           
+            padding: 30px 10px;
+            .contact__info__title{
+                span{
+                    
+                    @include sub-title($color-blue, $color-white);
+                    font-size: 34px;
+                }
+                
+             }
+            .contact__info__block{
+                
+                padding: 0 0 30px 0;
+                .contact__info__text{
+                    @include text-appearance($color-gray);
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                }
+                .contact__info__adresse{
+                    font-size: 20px;
+                    address{                        
+                        margin: 10px 0;
+                        i{
+                            color: $color-yellow;
                         }
                     }
-                    .form-button{
-                        .bouton{
-                            @include bouton($color-white, $color-blue, $color-yellow);
-                            @include flex-one();
-                            justify-content: center;
-                            i{
-                                position: relative;
-                                left: 10px;
-                                @media (max-width:540px) {
-                                   font-size: 15px;
-                                }
+                    a{
+                        color: $color-blue;
+                        text-decoration: none;
+                        i{
+                            color: $color-yellow;
+                        }
+                    }
+                }
+                .contact__info__list{
+                    margin: 20px 0;
+                    li{
+                        display: inline;
+                        text-decoration: none;
+                        list-style: none;
+                        a{                                                                 
+                            font-size: 20px;
+                            color: $color-blue;
+                            &:hover{
+                                transform: scale(1.2px);
+                                transition: .3s ease-in-out;
+
                             }
                         }
                     }
                 }
-    
             }
         }
-        
-        
+        .contact__form{
+            width: 49%;
+            height: 100%;
+            padding: 30px 20px;
+            .contact__form__title{
+                span{                    
+                    @include sub-title($color-blue, $color-white);
+                    font-size: 34px;
+                } 
+            }
+            .form-content{
+              .form-group{
+                label{
+                    @include text-appearance($color-blue);
+                    font-size: 18px;
+                }
+                input{
+                     @include text-appearance($color-gray);
+                    font-size: 18px;
+                    border-bottom:2px solid $color-blue;
+                    &:focus{
+                        outline: none;
+                        border-bottom: 2px solid $color-yellow;
+                        }
+                }
+                textarea{
+                    height: 3em;
+                    border:none;
+                    border-bottom: 2px solid $color-blue;
+                    @include text-appearance($color-gray);
+                    font-size: 18px;
+                    &:focus{
+                        outline: none;
+                        border-bottom: 2px solid $color-yellow;
+                    }
+                }
+              }  
+            }
+            .form-button{
+                .bouton{
+                    @include bouton($color-white, $color-blue, $color-yellow);
+                    @include flex-one();
+                    justify-content: center;
+                    i{
+                        position: relative;
+                        left: 10px;
+                        @media (max-width:540px) {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

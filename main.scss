@@ -4,7 +4,8 @@
 
 $color-back-one:#4a346f;
 $color-yellow : #ff9100;
-$color-blue:#3c3d71;
+// $color-blue:#3c3d71;
+$color-blue : #4a4b70;
 $color-white:#ffffff;
 $color-gray:#2a2527;
 
@@ -18,7 +19,7 @@ $family-lobster : 'Lobster', cursive;
 @mixin bouton($txt-color, $bg-color, $shadow-color) {
     background-color: $bg-color;
     color: $txt-color;
-    font-size: 24px;
+    font-size: 22px;
     font-family: $family-heebo;
     text-transform: none;
     font-weight: bolder;
@@ -29,7 +30,7 @@ $family-lobster : 'Lobster', cursive;
         box-shadow: 3px 5px $shadow-color;
     }
     @media (min-width : 768px) and (max-width:1420px){
-        font-size: 20px;
+        font-size: 18px;
         padding: 10px 20px;
    }
     @media (max-width : 768px){
@@ -51,11 +52,11 @@ $family-lobster : 'Lobster', cursive;
     }
 }
 @mixin text-appearance($text-color) {
-    font-size: 24px;
+    font-size: 22px;
     color: $text-color;
     font-family: $family-roboto; 
     @media (min-width : 768px) and (max-width:1420px){
-        font-size: 20px;
+        font-size: 18px;
    }
     @media (max-width : 768px){
         font-size: 14px;
@@ -125,9 +126,7 @@ $family-lobster : 'Lobster', cursive;
     transform: rotate(15deg);
     @media (max-width:768px) {
         height:5em;
-        //border: 4px solid $color-yellow;
-         // width: 20em; 
-     }
+    }
 }
 
 

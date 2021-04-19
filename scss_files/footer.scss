@@ -5,11 +5,12 @@
     overflow: hidden;    
     .footer__second-corner{
         @include shape();
-        background-color: $color-blue;
+        background-color: #4a4b70;
         right: -4em;
         top: -9.5em;
     }
     .footer__container{
+        padding: 20px 0;
         @include flex-two();
         .footer__container__row{
             @include flex-one();
@@ -59,7 +60,7 @@
             }
             .footer__container__row__newsletter{
                 p{
-                    @include text-appearance($color-white);
+                    @include text-appearance($color-white);                    
                 }
                 .newsletter__input{
                     @include text-appearance($color-white);
@@ -78,7 +79,10 @@
             }
         }
         .footer__paragraph{
-          @include text-appearance($color-white);
+         // @include text-appearance($color-white);
+         color: $color-white;
+        font-family: $family-roboto;
+        font-size: 16px;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
@@ -113,12 +117,14 @@ footer{
     @include flex-two();
     justify-content: center;
     .footer-link{
-        @include text-appearance($color-white);
+       // @include text-appearance($color-white);
+        color: $color-white;
+        font-family: $family-roboto;
+        font-size: 16px;
         position: relative;
         margin-bottom: 5px;
         &:hover{
-            color: $color-yellow;  
-                  
+            color: $color-yellow; 
         }
         &:hover::after{
             content: "";
@@ -145,8 +151,10 @@ footer{
         }
     }
     p{
-        @include text-appearance($color-white);
-      
+        //@include text-appearance($color-white);
+        color: $color-white;
+        font-family: $family-roboto;
+        font-size: 16px;
     }
    
 }

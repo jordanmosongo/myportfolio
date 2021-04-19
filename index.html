@@ -7,7 +7,7 @@
   <title>jordan mosongo</title>
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
   <link rel="stylesheet" href="assets/materialize/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- <link href="assets/aos.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
@@ -18,7 +18,8 @@
   <link rel="stylesheet" href="css_files/about.css">
   <link rel="stylesheet" href="css_files/photo.css">
   <link rel="stylesheet" href="css_files/skills.css">
-  <link rel="stylesheet" href="css_files/passion.css">
+  <link rel="stylesheet" href="css_files/service.css">
+  <!-- <link rel="stylesheet" href="css_files/passion.css"> -->
   <link rel="stylesheet" href="css_files/projects.css">
   <link rel="stylesheet" href="css_files/contact.css">
   <link rel="stylesheet" href="css_files/footer.css">
@@ -30,19 +31,20 @@
         <a href="#!" class="brand-logo brand-logo--color">Jm</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down menu-link">
-          <li><a href="#" class="menu-link__item menu-link__item--style active" onclick="activateLink(event)">Acceuil</a></li>
+          <li><a href="#" class="menu-link__item menu-link__item--style active" onclick="activateLink(event)" on>Acceuil</a></li>
           <li><a href="#about" class="menu-link__item menu-link__item--style" onclick="activateLink(event)">A propos</a></li>
-          <li><a href="#skills" class="menu-link__item menu-link__item--style" >Skills</a></li>
+          <li><a href="#skills" class="menu-link__item menu-link__item--style" onclick="activateLink(event)">Compétences</a></li>
+          <li><a href="#service" class="menu-link__item menu-link__item--style" onclick="activateLink(event)">Services</a></li>
           <li><a href="#projects" class="menu-link__item menu-link__item--style" onclick="activateLink(event)">Projets</a></li>
           <li><a href="#contact" class="menu-link__item menu-link__item--style" onclick="activateLink(event)">Contact</a></li>
         </ul>
       </div>
-    </nav>
-  
+    </nav>  
     <ul class="sidenav" id="mobile-demo">
       <li class="sidenav__element"><a href="#">Acceuil</a></li>
       <li class="sidenav__element"><a href="#about">A propos</a></li>
       <li class="sidenav__element"><a href="#skills">Skills</a></li>
+      <li class="sidenav__element"><a href="#service">Services</a></li>
       <li class="sidenav__element"><a href="#projects">Projets</a></li>
       <li class="sidenav__element"><a href="#contact">Contact</a></li>
     </ul>
@@ -60,13 +62,14 @@
               <span class="banner-text__title__span">Je m'appelle</span>
             </div>
             <div>
-              <span class="banner-text__title__span"><strong>Jordan MOSONGO</strong></span>
+              <span class="banner-text__title__span"><strong data-text="Jordan MOSONGO">Jordan MOSONGO</strong></span>
             </div>
           </h1>
           
-          <p class="banner-text__description banner-text__description--style">Apprenant développeur à la Kinshasa Digital Academy, <br>
-          Etudiant en Génie Informatique<span class="text-to-hide">, passionné par la programmation, l'intelligence artificielle et
-          la cybersécurité</span></p>
+          <p class="banner-text__description banner-text__description--style">Développeur fullstack, passionné par l'intelligence artificielle
+            et la cybersécurité</p>
+          <!-- Etudiant en Génie Informatique<span class="text-to-hide">, passionné par la programmation et
+          la cybersécurité</span></p> -->
         <button class="banner-text__bouton banner-text__bouton--style">plus sur moi</button>
         </div>
         <div class="col m6 l6 s6 banner-image" >
@@ -76,7 +79,6 @@
       </div>
     </div>
   </section>  
-
   <section class="about about--style .hide-on-small" id="about">
     <div class="container tablet-and-up-container">
       <div class="row">
@@ -97,7 +99,8 @@
             langages de programmation dont C, C# et Java. Peu après, j'ai porté intérêt sur le web et le mobile
              avec de nouvelles technologies.
             
-            </p> 
+          </p> 
+          <i class="fas fa-angle-double-down"></i>
           <div class="download">
             <!-- <i class="material-icons">download</i> -->
             <button class="about__text__bouton--style">Télécharger le CV</button>
@@ -107,7 +110,7 @@
       </div>
       
     </div>
-    <div class="mobile-container">
+    <div class="mobile-container" id="about">
         <div class="container">
           <div class="row">            
             <div class="col s12"> 
@@ -116,17 +119,10 @@
                 <p>Après mon inscription en Informatique à l'Université de Kinshasa, je me suis lancé dans l'Apprentissage des
                   langages de programmation dont C, C# et Java. Peu après, j'ai porté intérêt sur le web et le mobile
                    avec de nouvelles technologies.
-                 
-                  </p>                          
+                </p>   
+                <i class="fas fa-angle-double-down"></i>                       
                 <button class="about__text__bouton--style">Télécharger le CV</button>
               </div>
-              <!-- <div class="technologies">
-                <div><img src="images/technos/new/angular.png" alt=""></div>
-                <div><img src="images/technos/new/mongodb.png" alt=""></div>
-                <div><img src="images/technos/new/nodejs.png" alt=""></div>
-                <div><img src="images/technos/new/js.png" alt=""></div>
-                <div><img src="images/technos/new/html.png" alt=""></div>
-              </div> -->
             </div>
           </div>
         </div>
@@ -134,11 +130,12 @@
   </section>
   
   <section class="photo">
-    <h2 class="photo__title photo__title--style"><span>Coding...</span></h2>
+    <h2 class="photo__title photo__title--style"><span>une passion, un talent...</span></h2>
     <img src="images/first__.jpg" alt="image for jordan">
   </section>
 
   <section class="skills" id="skills">
+    <div class="skill-corner"></div>
     <div class="container skills__content">
       <h2 data-aos="zoom-in">Compétences</h2>  
       <div class="row" id="first-row-of-skills">
@@ -148,143 +145,190 @@
                 </div>
                 <div class="skill__name"></div>
                 <p>Html 5</p>
-            </div> -->
+            </div>
+            <div class="col s4">
+              <div class="skill__element">
+                <img src="images/technos/new/html.png" alt="logo for html">
+              </div>
+              <div class="skill__name"></div>
+              <p>Html 5</p>
+          </div>
+          <div class="col s4">
+            <div class="skill__element">
+              <img src="images/technos/new/html.png" alt="logo for html">
+            </div>
+            <div class="skill__name"></div>
+            <p>Html 5</p>
+        </div> -->
            
       </div>        
-      <div class="row" id="second-row-of-skills">
-        <!-- <div class="col m4 s4 l4">
-          <div class="skill__element">
-            <img src="images/technos/new/relational-database.png" alt="logo for relational databases">
-          </div>
-          <div class="skill__name"></div>
-          <p>R-database</p>
-        </div> -->
-      
-      </div>  
+      <div class="row" id="second-row-of-skills"></div>            
+       
     </div>
   </section>
-  <section class="passion">
-    <div class="container passion__container">
-      <div class="row row-container">
-        <div class="col s12 m6  passion-workspace">
-          <img src="images/technos/workspace_.png" alt="my workspace">
-        </div>
-        <div class="col s12 m6  passion-talent">
-          <h2>Une passion, un talent...</h2>
-          <p> L'Informatique est pour moi une passion.
-            ma vision est centrée principalement sur la programmation, 
-            l'intelligence artificielle et la cybersécurité. Quant à mes études,
-          j'ai acquis de nombreuses notions qui recadrent ma logique de travail et me donnent une 
-          réflexion particulière dans la résolution des problèmes scientifiques.
+  <section class="service">
+    <h2 class="service__titre">Services</h2>
+    <div class="container service__content">
+      <div class="service__element">
+        <i class="fas fa-chart-pie"></i>
+        <h3>Analyse des données</h3>
+        <p>Pour des besoins d'exploration et d'entreposage
+          des données afin de prendre de bonnes décisions
         </p>
-        </div>
       </div>
-    </div>
+      <div class="service__element">
+        <i class="fas fa-code"></i>
+        <h3>Programmation</h3>
+        <p>Pour des besoins d'applications web, mobile ou
+          desktop de qualité répondant à vos exigences
+        </p>
+      </div>
+      <div class="service__element">
+        <i class="fas fa-project-diagram"></i>
+        <h3>Conception</h3>
+        <p>Pour la mise en place d'un système d'information
+          robuste pour votre entreprise ou organisation
+        </p>
+      </div>
+    </div>    
   </section>
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="projects__third-corner"></div>
     <div class="projects__fourth-corner"></div>
    
     <div class="container projects__content">
        <h2 class="projects__content__title" data-aos="zoom-in">Projets réalisés</h2>
-       
-       <div class="btn-projects">
-         <button class="btn-projects__all">All</button>
-         <button class="btn-projects__web">Web</button>
-         <button class="btn-projects__mobile">Mobile</button>
-         <button class="btn-projects__desktop">Desktop</button>
-       </div>
+    
+       <p class="projects__content__paragraphe">Voici quelques projets réalisés, de l'apprentissage au professionnalisme</p>
        
        <div class="projects__content__elements" id="projects-container">
-         <!-- <div class="first-element">
-            <div class="technos">
-              <h3 class="technos-title">Mon portfolio.</h3>
-              <p>
-                Html5, Sass, Materialize-css et Javascript
-              </p>
-              <div class="technos-link">
-                <a href=""><i class="fab fa-github fa-2x"></i></a>
-                <a href=""><i class="fas fa-link fa-2x"></i></a>
-              </div>
-           </div>
-         </div> -->
+        <div class="card">
+          <div class="card-image">
+            <img src="images/realisation/projetkda.png">   
+            <a href="" class="card-image__link">Visiter</a>         
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Kinshasa digitale</h3>
+            <p>Ce projet est une reproduction du site de la Kinshasa digitale.
+              Développé dans le cadre d'apprentissage au sein de l'académie afin de bien assimiler les 
+              notions et normes Html5 et Css3
+            </p>
+          </div>
+          <div class="card-action">
+            <ul>
+              <li>Html5</li>
+              <li>Css3 pure</li>
+            </ul>
+          </div>
+        </div>   
+        <div class="card">
+          <div class="card-image">
+            <img src="images/realisation/projetkda.png">   
+            <a href="" class="card-image__link">Visiter</a>         
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Kinshasa digitale</h3>
+            <p>Ce projet est une reproduction du site de la Kinshasa digitale.
+              Développé dans le cadre d'apprentissage au sein de l'académie afin de bien assimiler les 
+              notions et normes Html5 et Css3
+            </p>
+          </div>
+          <div class="card-action">
+            <ul>
+              <li>Html5</li>
+              <li>Css3 pure</li>
+            </ul>
+          </div>
+        </div> 
+        <div class="card">
+          <div class="card-image">
+            <img src="images/realisation/projetkda.png">   
+            <a href="" class="card-image__link">Visiter</a>         
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Kinshasa digitale</h3>
+            <p>Ce projet est une reproduction du site de la Kinshasa digitale.
+              Développé dans le cadre d'apprentissage au sein de l'académie afin de bien assimiler les 
+              notions et normes Html5 et Css3
+            </p>
+          </div>
+          <div class="card-action">
+            <ul>
+              <li>Html5</li>
+              <li>Css3 pure</li>
+            </ul>
+          </div>
+        </div>                        
        </div>
-       <div class="projects__content__elements" id="projects-container-second">
-           <!-- <div class="first-element">
-            <div class="technos">
-              <h3 class="technos-title">Mon portfolio.</h3>
-              <p>
-                Html5, Sass, Materialize-css et Javascript
-              </p>
-              <div class="technos-link">
-                <a href=""><i class="fab fa-github fa-2x"></i></a>
-                <a href=""><i class="fas fa-link fa-2x"></i></a>
-              </div>
-           </div>
-         </div> -->
+       <div class="project-bouton">
+         <a><i class="fas fa-chevron-left"></i></a>
+         <a><i class="fas fa-chevron-right"></i></a>
        </div>
     </div>
   </section>
-  <section class="contact">  
-    <h2 data-aos="zoom-in">Restez en contact</h2>
-    <div class="container container-content">      
-      <div class="row">
-        <div class="col s12 contact__message">
-            <form id="form" data-aos="zoom-in">
-              <div class="form-content">
-                <div class="form-group">
-                  <label for="sujet">Objet</label>
-                  <select name="sujet" id="sujet" >
-                    <option value=""></option>
-                    <option value="M'engager à temps plein">M'engager à temps plein</option>
-                    <option value="">M'engager à temps partiel</option>
-                    <option value="">Participation à un projet</option>
-                    <option value="">Soumission d'un projet</option>
-                    <option value="">Conception du système d'information</option>
-                    <option value="">Besoin d'une formation</option>
-                    <option value="">Besoin d'un algorithme pour un problème complexe</option>
-                    <option value="">Feedback</option>
-                    <option value="autre">Autre</option>
-                  </select>
-                </div>
-                <div class="row">
-                  <div class="col s12">
-                    <div class="form-group">
-                      <label for="nom">Nom</label>
-                      <input type="text" id="nom">
-                     </div>
-                  </div>
-                </div>         
-               <div class="row email-and-phone" >
-                 <div class="col s12">
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                  </div> 
-                 </div>
-                 <div class="col s12">
-                  <div class="form-group">
-                    <label for="phone">Téléphone</label>
-                    <input type="tel" id="phone">
-                  </div>
-                 </div>
-               </div>             
-               <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea name="message" id="message"></textarea>
-              </div>  
-                            
-              </div>
-              <div class="form-button">
-                <button class="bouton" type="button" id="bouton-submit"> 
-                  Envoyer<i class="material-icons">send</i></button>
-              </div>
-            
-          </form>
+
+  <section class="contact" id="contact">  
+    <div class="container">
+      <div class="contact__info">
+        <h2 class="contact__info__title"><span>Me contacter</span></h2>
+        <div class="contact__info__block">
+          <p class="contact__info__text">
+            Je suis disponible pour répondre à vos appels et mails.
+            N'hésitez pas de me joindre sur les réseaux sociaux, de m'appeler
+            en cas de besoin ou de me laisser un message en remplissant ce formulaire
+          </p>
+          <p class="contact__info__adresse">
+            <address><i class="fas fa-map-marker-alt"></i>64 Boko/commune de Kimbanseke</address>
+            <a href="+243 815392056"><i class="far fa-phone-alt"></i>0815392056</a> <br>
+            <a href="mailTo:mosongojordan@gmail.com"><i class="far fa-envelope"></i>mosongojordan@gmail.com</a>
+          </p>
+          <ul class="contact__info__list">
+           <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+           <li><a href=""><i class="fab fa-twitter"></i></a></li>
+           <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+         </ul>
         </div>
       </div>
+      <div class="contact__form">
+        <h2 class="contact__form__title"><span>Me laisser un message</span></h2>
+        <form id="form" data-aos="zoom-in">
+          <div class="form-content">
+            <div class="row">
+              <div class="col s12">
+                <div class="form-group">
+                  <label for="nom">Nom</label>
+                  <input type="text" id="nom">
+                 </div>
+              </div>
+            </div>         
+            <div class="col s12">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+              </div> 
+            </div>    
+            <div class="col s12">
+              <div class="form-group">
+                <label for="objet">Objet</label>
+                <input type="text" id="objet" name="objet">
+              </div> 
+            </div>                   
+           <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message"></textarea>
+          </div>  
+                        
+          </div>
+          <div class="form-button">
+            <button class="bouton" type="button" id="bouton-submit"> 
+              Envoyer<i class="material-icons">send</i></button>
+          </div>
+        
+      </form>
+      </div>
     </div>
-  </section>
+</section>
+
   <section class="footer">    
     <div class="footer__second-corner"></div>
     <div class="container footer__container">
@@ -296,7 +340,7 @@
           </q>
         </div>
         <div class="col m4 footer__container__row__separator">
-          <div class="empty-point"></div>
+          <div class="empty-point" data-aos="zoom"></div>
         </div>
         <div class="col m4 footer__container__row__newsletter" data-aos="zoom-in-left">
           <p>Inscrivez-vous à ma newsletter pour rester au courant de mes
@@ -308,18 +352,12 @@
           </form>
         </div>
       </div>
-      <div class="footer__paragraph">
-        <div class="social-network">
-          <a href="" id="facebook"><i class="material-icons">facebook</i></a>
-         <a href="mailTo:mosongojordan@gmail.com" id="email"><i class="material-icons">email</i></a>        
-        </div>
-        <p><a href="+243 815392056" id="telephone"></a></p>        
-      </div>
+     
     </div>    
   </section>  
   <footer>
     <a href="#acceuil" class="footer-link">Haut de page</a>
-    <p>&copy;copyright : jordan mosongo 2021</p>
+    <p>&copy;copyright | jordan mosongo 2021</p>
   </footer>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script type="text/javascript" src="assets/jquery.js"></script>
@@ -332,6 +370,6 @@
   <script src="assets/aos-master/dist/aos.js"></script>
   <script src="main.js"></script>
   <script src="service.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 </body>
 </html>

@@ -7,22 +7,35 @@
 }
 
 .contact {
-  background-color: #3c3d71;
+  background-color: #4a4b70;
   position: relative;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 80px 0;
 }
-.contact h2 {
-  color: #ffffff;
+.contact .container {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #2a2527;
+}
+.contact .container .contact__info {
+  width: 49%;
+  height: 100%;
+  padding: 30px 10px;
+}
+.contact .container .contact__info .contact__info__title span {
+  color: #4a4b70;
   font-family: "Roboto", sans-serif;
   font-size: 2.5em;
   position: relative;
   padding-bottom: 40px;
+  font-size: 34px;
 }
-.contact h2::before {
+.contact .container .contact__info .contact__info__title span::before {
   content: "";
   width: 100%;
   height: 7px;
@@ -31,136 +44,204 @@
   left: 0;
   top: 60px;
 }
-.contact .container-content {
-  padding-bottom: 10px;
-}
-.contact .container-content .row {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-.contact .container-content .row .contact__message form {
-  background-color: #ffffff;
-  padding: 50px 20px;
-  box-sizing: border-box;
-  width: 100%;
-  box-shadow: 10px 10px 10px black;
-  border-radius: 10px;
-}
-.contact .container-content .row .contact__message form .form-content .form-group {
-  margin-bottom: 5px;
-  box-sizing: border-box;
-}
-.contact .container-content .row .contact__message form .form-content .form-group label {
-  font-size: 24px;
-  color: #3c3d71;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-}
-@media (min-width: 768px) and (max-width: 1420px) {
-  .contact .container-content .row .contact__message form .form-content .form-group label {
-    font-size: 20px;
+@media (max-width: 768px) {
+  .contact .container .contact__info .contact__info__title span::before {
+    top: 40px;
   }
 }
 @media (max-width: 768px) {
-  .contact .container-content .row .contact__message form .form-content .form-group label {
+  .contact .container .contact__info .contact__info__title span {
+    font-size: 1.8em;
+  }
+}
+.contact .container .contact__info .contact__info__block {
+  padding: 0 0 30px 0;
+}
+.contact .container .contact__info .contact__info__block .contact__info__text {
+  font-size: 22px;
+  color: #2a2527;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .contact .container .contact__info .contact__info__block .contact__info__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .container .contact__info .contact__info__block .contact__info__text {
     font-size: 14px;
   }
 }
 @media (max-width: 576px) {
-  .contact .container-content .row .contact__message form .form-content .form-group label {
+  .contact .container .contact__info .contact__info__block .contact__info__text {
     font-size: 12px;
   }
 }
-@media (max-width: 576px) and (max-width: 320px) {
-  .contact .container-content .row .contact__message form .form-content .form-group label {
+@media (max-width: 576px) and (max-width: 380px) {
+  .contact .container .contact__info .contact__info__block .contact__info__text {
+    font-size: 11px;
+  }
+}
+.contact .container .contact__info .contact__info__block .contact__info__adresse {
+  font-size: 20px;
+}
+.contact .container .contact__info .contact__info__block .contact__info__adresse address {
+  margin: 10px 0;
+}
+.contact .container .contact__info .contact__info__block .contact__info__adresse address i {
+  color: #ff9100;
+}
+.contact .container .contact__info .contact__info__block .contact__info__adresse a {
+  color: #4a4b70;
+  text-decoration: none;
+}
+.contact .container .contact__info .contact__info__block .contact__info__adresse a i {
+  color: #ff9100;
+}
+.contact .container .contact__info .contact__info__block .contact__info__list {
+  margin: 20px 0;
+}
+.contact .container .contact__info .contact__info__block .contact__info__list li {
+  display: inline;
+  text-decoration: none;
+  list-style: none;
+}
+.contact .container .contact__info .contact__info__block .contact__info__list li a {
+  font-size: 20px;
+  color: #4a4b70;
+}
+.contact .container .contact__info .contact__info__block .contact__info__list li a:hover {
+  transform: scale(1.2px);
+  transition: 0.3s ease-in-out;
+}
+.contact .container .contact__form {
+  width: 49%;
+  height: 100%;
+  padding: 30px 20px;
+}
+.contact .container .contact__form .contact__form__title span {
+  color: #4a4b70;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5em;
+  position: relative;
+  padding-bottom: 40px;
+  font-size: 34px;
+}
+.contact .container .contact__form .contact__form__title span::before {
+  content: "";
+  width: 100%;
+  height: 7px;
+  background: -webkit-linear-gradient(45deg, #ffffff 46%, #ff9100 0%);
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+@media (max-width: 768px) {
+  .contact .container .contact__form .contact__form__title span::before {
+    top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .container .contact__form .contact__form__title span {
+    font-size: 1.8em;
+  }
+}
+.contact .container .contact__form .form-content .form-group label {
+  font-size: 22px;
+  color: #4a4b70;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .contact .container .contact__form .form-content .form-group label {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .container .contact__form .form-content .form-group label {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .contact .container .contact__form .form-content .form-group label {
     font-size: 12px;
   }
 }
-@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
-  .contact .container-content .row .contact__message form .form-content .form-group label {
-    font-size: 10px;
+@media (max-width: 576px) and (max-width: 380px) {
+  .contact .container .contact__form .form-content .form-group label {
+    font-size: 11px;
   }
 }
-.contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
-  font-size: 24px;
+.contact .container .contact__form .form-content .form-group input {
+  font-size: 22px;
   color: #2a2527;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  border-bottom: 2px solid #3c3d71;
+  border-bottom: 2px solid #4a4b70;
 }
 @media (min-width: 768px) and (max-width: 1420px) {
-  .contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
-    font-size: 20px;
+  .contact .container .contact__form .form-content .form-group input {
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
-  .contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
+  .contact .container .contact__form .form-content .form-group input {
     font-size: 14px;
   }
 }
 @media (max-width: 576px) {
-  .contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
+  .contact .container .contact__form .form-content .form-group input {
     font-size: 12px;
   }
 }
-@media (max-width: 576px) and (max-width: 320px) {
-  .contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
-    font-size: 12px;
+@media (max-width: 576px) and (max-width: 380px) {
+  .contact .container .contact__form .form-content .form-group input {
+    font-size: 11px;
   }
 }
-@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
-  .contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
-    font-size: 10px;
-  }
-}
-.contact .container-content .row .contact__message form .form-content .form-group input:focus, .contact .container-content .row .contact__message form .form-content .form-group select:focus {
+.contact .container .contact__form .form-content .form-group input:focus {
   outline: none;
   border-bottom: 2px solid #ff9100;
 }
-.contact .container-content .row .contact__message form .form-content .form-group textarea {
+.contact .container .contact__form .form-content .form-group textarea {
   height: 3em;
   border: none;
-  border-bottom: 2px solid #3c3d71;
-  font-size: 24px;
+  border-bottom: 2px solid #4a4b70;
+  font-size: 22px;
   color: #2a2527;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
 @media (min-width: 768px) and (max-width: 1420px) {
-  .contact .container-content .row .contact__message form .form-content .form-group textarea {
-    font-size: 20px;
+  .contact .container .contact__form .form-content .form-group textarea {
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
-  .contact .container-content .row .contact__message form .form-content .form-group textarea {
+  .contact .container .contact__form .form-content .form-group textarea {
     font-size: 14px;
   }
 }
 @media (max-width: 576px) {
-  .contact .container-content .row .contact__message form .form-content .form-group textarea {
+  .contact .container .contact__form .form-content .form-group textarea {
     font-size: 12px;
   }
 }
-@media (max-width: 576px) and (max-width: 320px) {
-  .contact .container-content .row .contact__message form .form-content .form-group textarea {
-    font-size: 12px;
+@media (max-width: 576px) and (max-width: 380px) {
+  .contact .container .contact__form .form-content .form-group textarea {
+    font-size: 11px;
   }
 }
-@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
-  .contact .container-content .row .contact__message form .form-content .form-group textarea {
-    font-size: 10px;
-  }
-}
-.contact .container-content .row .contact__message form .form-content .form-group textarea:focus {
+.contact .container .contact__form .form-content .form-group textarea:focus {
   outline: none;
   border-bottom: 2px solid #ff9100;
 }
-.contact .container-content .row .contact__message form .form-button .bouton {
-  background-color: #3c3d71;
+.contact .container .contact__form .form-button .bouton {
+  background-color: #4a4b70;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Heebo", sans-serif;
   text-transform: none;
   font-weight: bolder;
@@ -172,45 +253,41 @@
   flex-direction: row;
   justify-content: center;
 }
-.contact .container-content .row .contact__message form .form-button .bouton:hover {
+.contact .container .contact__form .form-button .bouton:hover {
   box-shadow: 3px 5px #ff9100;
 }
 @media (min-width: 768px) and (max-width: 1420px) {
-  .contact .container-content .row .contact__message form .form-button .bouton {
-    font-size: 20px;
+  .contact .container .contact__form .form-button .bouton {
+    font-size: 18px;
     padding: 10px 20px;
   }
 }
 @media (max-width: 768px) {
-  .contact .container-content .row .contact__message form .form-button .bouton {
+  .contact .container .contact__form .form-button .bouton {
     font-size: 14px;
     padding: 8px 16px;
   }
-  .contact .container-content .row .contact__message form .form-button .bouton:hover {
+  .contact .container .contact__form .form-button .bouton:hover {
     box-shadow: 2px 3px #ff9100;
   }
 }
 @media (max-width: 576px) {
-  .contact .container-content .row .contact__message form .form-button .bouton {
+  .contact .container .contact__form .form-button .bouton {
     font-size: 12px;
   }
 }
-@media (max-width: 576px) and (max-width: 320px) {
-  .contact .container-content .row .contact__message form .form-button .bouton {
-    font-size: 12px;
+@media (max-width: 576px) and (max-width: 380px) {
+  .contact .container .contact__form .form-button .bouton {
+    font-size: 8.5px;
+    padding: 5px 10px;
   }
 }
-@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
-  .contact .container-content .row .contact__message form .form-button .bouton {
-    font-size: 10px;
-  }
-}
-.contact .container-content .row .contact__message form .form-button .bouton i {
+.contact .container .contact__form .form-button .bouton i {
   position: relative;
   left: 10px;
 }
 @media (max-width: 540px) {
-  .contact .container-content .row .contact__message form .form-button .bouton i {
+  .contact .container .contact__form .form-button .bouton i {
     font-size: 15px;
   }
 }

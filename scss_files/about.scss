@@ -112,11 +112,36 @@
            height: 100%;
            display: flex;
            flex-direction: column;
-           justify-content: space-around;
-           align-items: flex-start;
-        
+           justify-content: center;
+           align-items: center;
+            
             p{
                 @include text-appearance($color-white);
+            }
+            i{
+                color: $color-white;
+                font-size: 40px;
+                padding: 10px 0;
+                animation: move-image 3s ease-in-out 3s infinite;
+                    @keyframes move-image {
+                        0%{
+                            transform: translateY(5px);
+                            color: $color-white;
+                            transition: 2s ease;
+                        }
+                        50%{
+                            transform: translateY(-5px);
+                            color: $color-blue;
+                            transition: 2s ease;
+                        }
+                        100%{
+                            transform: translateY(5px);
+                            color: $color-white;
+                            transition: 2s ease;
+                            
+                        }
+                    }
+                               
             }
             .about__text__bouton--style{
                 @include bouton($color-yellow, $color-white, $color-blue);
@@ -134,17 +159,13 @@
             display: inherit;
         }
         .container{
-           //padding-bottom: 30px;
-            display: flex;
-
+           display: flex;
            .col{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             h2{
-                //margin-bottom: 10px;
-                //@include sub-title($color-white, $color-white);
-                span{
+               span{
                     color: $color-white;
                     font-family: $family-roboto;
                     font-size: 30px;
@@ -164,23 +185,38 @@
                  
             }
             .about-mobile-content{
+                    @include flex-two();
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
                     p{
                         @include text-appearance($color-white);
                         padding-bottom: 10px;
                         padding-top: 10px;
                     }
-                    .hide-on-med-and-down{
-                        @media (max-width:768px) {
-                            display: none;
-                        }
-                    }
-                    .download{
-                        border: 2px solid red;
-                        @include flex-one();
-                        i{
-                            font-size: 40px;
-                            color: $color-white;
-                        }
+                    i{
+                        color: $color-white;
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                        animation: move-image 3s ease-in-out 3s infinite;
+                            @keyframes move-image {
+                                0%{
+                                    transform: translateY(5px);
+                                    color: $color-white;
+                                    transition: 2s ease;
+                                }
+                                50%{
+                                    transform: translateY(-5px);
+                                    color: $color-blue;
+                                    transition: 2s ease;
+                                }
+                                100%{
+                                    transform: translateY(5px);
+                                    color: $color-white;
+                                    transition: 2s ease;
+                                    
+                                }
+                            }
                     }
                     .about__text__bouton--style{
                         @include bouton($color-yellow, $color-white, $color-yellow);

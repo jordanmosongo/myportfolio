@@ -9,6 +9,22 @@
 .skills {
   position: relative;
 }
+.skills .skill-corner {
+  height: 9em;
+  width: 55em;
+  position: absolute;
+  background-color: #ffffff;
+  border: 7px solid #ff9100;
+  transform: rotate(15deg);
+  left: -4em;
+  bottom: -9.5em;
+  background-color: #4a4b70;
+}
+@media (max-width: 768px) {
+  .skills .skill-corner {
+    height: 5em;
+  }
+}
 .skills .skills__content {
   padding: 40px 0;
   display: flex;
@@ -22,7 +38,7 @@
   }
 }
 .skills .skills__content h2 {
-  color: #3c3d71;
+  color: #4a4b70;
   font-family: "Roboto", sans-serif;
   font-size: 2.5em;
   position: relative;
@@ -32,7 +48,7 @@
   content: "";
   width: 100%;
   height: 7px;
-  background: -webkit-linear-gradient(45deg, #3c3d71 46%, #ff9100 0%);
+  background: -webkit-linear-gradient(45deg, #4a4b70 46%, #ff9100 0%);
   position: absolute;
   left: 0;
   top: 60px;
@@ -60,7 +76,7 @@
   height: 140px;
   background-color: #ffffff;
   border-radius: 50%;
-  border: 5px solid #3c3d71;
+  border: 5px solid #4a4b70;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -74,7 +90,7 @@
   .skills .skills__content .col .skill__element {
     width: 80px;
     height: 80px;
-    border: 2.85px solid #3c3d71;
+    border: 2.85px solid #4a4b70;
   }
 }
 .skills .skills__content .col .skill__name {
@@ -82,14 +98,14 @@
   margin-top: 40px;
   width: 20px;
   height: 20px;
-  background-color: #3c3d71;
+  background-color: #4a4b70;
   border-radius: 50%;
 }
 .skills .skills__content .col .skill__name::before {
   content: "";
   height: 40px;
   width: 2px;
-  background-color: #3c3d71;
+  background-color: #4a4b70;
   position: absolute;
   margin: auto;
   left: 8px;
@@ -110,14 +126,14 @@
   }
 }
 .skills .skills__content .col p {
-  font-size: 24px;
-  color: #3c3d71;
+  font-size: 22px;
+  color: #4a4b70;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1420px) {
   .skills .skills__content .col p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {

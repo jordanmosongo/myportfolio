@@ -1,7 +1,12 @@
 @import "../main.scss";
 .skills{
     position: relative;
-    
+    .skill-corner{
+        @include shape();
+        left: -4em;
+        bottom: -9.5em;
+        background-color: #4a4b70;
+    }
    // height: 70rem;
     .skills__content{     
         padding: 40px 0;  

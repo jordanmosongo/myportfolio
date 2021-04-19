@@ -1,0 +1,38 @@
+@import '../main.scss';
+.service{
+    padding: 30px 0;
+    background-color: #4a4b70;
+    position: relative;
+    @include flex-two();
+    .service__titre{
+       @include sub-title($color-white, $color-white);
+    }   
+    .service__content{
+        @include flex-one();
+        justify-content: space-between;
+        .service__element{
+            padding: 30px 10px;
+            width: 30%;
+            border-radius: 5px;
+            background-color: $color-white;
+            margin-bottom: 30px;
+            box-shadow: 5px 5px 5px $color-gray;
+            text-align: center;
+            i{
+                font-size: 50px;
+                color: $color-yellow;
+            }
+            h3{
+                font-size: 28px;
+                color: $color-blue;
+                font-family: $family-roboto;
+            }
+            p{
+                font-size: 20px;
+                color: $color-gray;
+                font-family: $family-roboto;
+            }
+            
+        }
+    }
+}
