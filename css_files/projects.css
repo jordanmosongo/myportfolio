@@ -31,6 +31,7 @@
 @media (max-width: 768px) {
   .projects .projects__third-corner {
     height: 5em;
+    width: 15em;
   }
 }
 .projects .projects__fourth-corner {
@@ -47,6 +48,7 @@
 @media (max-width: 768px) {
   .projects .projects__fourth-corner {
     height: 5em;
+    width: 15em;
   }
 }
 .projects .projects__content {
@@ -115,20 +117,24 @@
   flex-direction: row;
   justify-content: space-between;
 }
-@media (max-width: 535px) {
+@media (max-width: 540px) {
   .projects .projects__content .projects__content__elements {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
   }
 }
 .projects .projects__content .projects__content__elements .card {
   width: 30%;
 }
-@media (max-width: 535px) {
+@media (max-width: 540px) {
   .projects .projects__content .projects__content__elements .card {
     width: 100%;
+  }
+}
+@media (min-width: 541px) and (max-width: 992px) {
+  .projects .projects__content .projects__content__elements .card {
+    width: 32%;
   }
 }
 .projects .projects__content .projects__content__elements .card .card-image {
@@ -150,7 +156,7 @@
   cursor: pointer;
   position: absolute;
   border: 2px solid #4a4b70;
-  padding: 7px 30px;
+  padding: 4px 20px;
   bottom: -20px;
 }
 .projects .projects__content .projects__content__elements .card .card-image .card-image__link:hover {
@@ -189,7 +195,6 @@
   font-size: 22px;
   color: #ff9100;
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
 }
 @media (min-width: 768px) and (max-width: 1420px) {
   .projects .projects__content .projects__content__elements .card .card-content .card-title {
@@ -209,13 +214,22 @@
 @media (max-width: 576px) and (max-width: 380px) {
   .projects .projects__content .projects__content__elements .card .card-content .card-title {
     font-size: 11px;
+  }
+}
+@media (max-width: 540px) {
+  .projects .projects__content .projects__content__elements .card .card-content .card-title {
+    font-size: 30px;
+  }
+}
+@media (min-width: 541px) and (max-width: 992px) {
+  .projects .projects__content .projects__content__elements .card .card-content .card-title {
+    font-size: 20px;
   }
 }
 .projects .projects__content .projects__content__elements .card .card-content p {
   font-size: 22px;
   color: #2a2527;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
 }
 @media (min-width: 768px) and (max-width: 1420px) {
   .projects .projects__content .projects__content__elements .card .card-content p {
@@ -235,6 +249,11 @@
 @media (max-width: 576px) and (max-width: 380px) {
   .projects .projects__content .projects__content__elements .card .card-content p {
     font-size: 11px;
+  }
+}
+@media (max-width: 540px) {
+  .projects .projects__content .projects__content__elements .card .card-content p {
+    font-size: 18px;
   }
 }
 .projects .projects__content .projects__content__elements .card .card-action {
@@ -246,7 +265,7 @@
   color: #4a4b70;
   font-family: "Roboto", sans-serif;
   margin: 0 5px;
-  font-size: 16px;
+  font-size: 18px;
 }
 @media (min-width: 768px) and (max-width: 1420px) {
   .projects .projects__content .projects__content__elements .card .card-action ul li {

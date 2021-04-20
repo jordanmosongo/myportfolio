@@ -23,10 +23,12 @@
 @media (max-width: 768px) {
   .skills .skill-corner {
     height: 5em;
+    width: 15em;
   }
 }
 .skills .skills__content {
-  padding: 40px 0;
+  *   
+        padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;

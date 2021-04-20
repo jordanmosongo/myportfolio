@@ -125,7 +125,8 @@ $family-lobster : 'Lobster', cursive;
     border: 7px solid $color-yellow;
     transform: rotate(15deg);
     @media (max-width:768px) {
-        height:5em;
+        height:5em;   
+        width: 15em;     
     }
 }
 

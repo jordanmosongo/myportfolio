@@ -21,7 +21,6 @@
         background-color: #4a4b70;
     }
     .projects__content{
-        
         padding: 20px 0 30px 0;
         @include flex-two();
         justify-content: center;
@@ -36,16 +35,18 @@
         .projects__content__elements{
             width: 100%;
             padding: 20px 0;
-            @include flex-one();
+            @include flex-one();            
             justify-content: space-between;
-            @media (max-width: 535px) {
+            @media (max-width: 540px) {
                 @include flex-two();
-                justify-content: space-around;
             }
             .card{
                 width: 30%;
-                @media (max-width:535px) {
+                @media (max-width:540px) {
                     width: 100%; 
+                }
+                @media (min-width:541px) and (max-width : 992px) {
+                    width: 32%; 
                 }
                 .card-image{
                     position: relative;
@@ -55,21 +56,29 @@
                         @include bouton($color-blue, $color-white, $color-white);
                          position: absolute;
                          border: 2px solid $color-blue;
-                         padding: 7px 30px;
+                         padding: 4px 20px;
                          bottom: -20px;
-                     
-                         
+                                 
                     }
                 }
                .card-content{  
                    text-align: center;                                    
                     .card-title{
                         @include text-appearance($color-yellow);
-                        font-size: 24px;                        
+                        @media (max-width:540px) {
+                            font-size: 30px;
+                        }
+                        @media (min-width:541px) and (max-width : 992px) {
+                            font-size: 20px;
+                        }        
                     } 
                     p{
                         @include text-appearance($color-gray);
-                        font-size: 18px;
+                        @media (max-width:540px) {
+                            font-size: 18px;
+                        }
+                        
+                        
                     }                   
                 }
                 .card-action{
@@ -79,7 +88,7 @@
                             display: inline;
                             @include text-appearance($color-blue);
                             margin: 0 5px;
-                            font-size: 16px;
+                            font-size: 18px;
                         }
                     }
                 }
