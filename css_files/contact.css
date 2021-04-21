@@ -113,32 +113,6 @@
     color: #ffffff;
   }
 }
-.contact .container .contact__info .contact__info__block .contact__info__adresse {
-  font-size: 20px;
-}
-.contact .container .contact__info .contact__info__block .contact__info__adresse address {
-  margin: 10px 0;
-}
-@media (max-width: 768px) {
-  .contact .container .contact__info .contact__info__block .contact__info__adresse address {
-    color: #ffffff;
-  }
-}
-.contact .container .contact__info .contact__info__block .contact__info__adresse address i {
-  color: #ff9100;
-}
-.contact .container .contact__info .contact__info__block .contact__info__adresse a {
-  text-decoration: none;
-  color: #4a4b70;
-}
-@media (max-width: 768px) {
-  .contact .container .contact__info .contact__info__block .contact__info__adresse a {
-    color: #ffffff;
-  }
-}
-.contact .container .contact__info .contact__info__block .contact__info__adresse a i {
-  color: #ff9100;
-}
 .contact .container .contact__info .contact__info__block .contact__info__list {
   margin: 20px 0;
 }
@@ -148,12 +122,38 @@
   list-style: none;
 }
 .contact .container .contact__info .contact__info__block .contact__info__list li a {
-  font-size: 20px;
+  font-size: 25px;
+  color: #4a4b70;
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .contact .container .contact__info .contact__info__block .contact__info__list li a {
+    color: #ffffff;
+  }
+}
+.contact .container .contact__info .contact__info__block .contact__info__adresse .info__adresse {
   color: #4a4b70;
 }
-.contact .container .contact__info .contact__info__block .contact__info__list li a:hover {
-  transform: scale(1.2px);
-  transition: 0.3s ease-in-out;
+@media (max-width: 768px) {
+  .contact .container .contact__info .contact__info__block .contact__info__adresse .info__adresse {
+    color: #ffffff;
+  }
+}
+.contact .container .contact__info .contact__info__block .contact__info__adresse .info__adresse i {
+  color: #ff9100;
+  margin-right: 20px;
+}
+.contact .container .contact__info .contact__info__block .contact__info__adresse a {
+  color: #4a4b70;
+}
+@media (max-width: 768px) {
+  .contact .container .contact__info .contact__info__block .contact__info__adresse a {
+    color: #ffffff;
+  }
+}
+.contact .container .contact__info .contact__info__block .contact__info__adresse a i {
+  color: #ff9100;
+  margin-right: 20px;
 }
 .contact .container .contact__form {
   width: 49%;

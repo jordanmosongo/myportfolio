@@ -1,22 +1,17 @@
 @import "../main.scss";
 .banner{
     padding-top: 4.5em;
-    background-color: $color-white;
-   
+    background-color: $color-white;   
     .container{
-        padding-top: 125px;
-        padding-bottom: 110px;
+        overflow: hidden;
         @include flex-one();
         justify-content: center;
-        @media (max-width:768px) {
-            padding-top: 35px;
-            padding-bottom: 20px;
-        }
         .container__row{
             width: 100%;
             @include flex-one();
-            justify-content: space-around;
-                 
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
             .banner-text{
                @include flex-two();
                justify-content: center;
@@ -44,10 +39,6 @@
                             @media (max-width: 380px) {
                                 font-size: 12px;
                                line-height: 16px;
-                                // @media (max-width: 280px) {
-                                //     font-size: 12px;
-                                //    line-height: 18px;
-                                // }
                             }
                         }
                         
@@ -83,10 +74,6 @@
                                 @media (max-width: 380px) {
                                     font-size: 14px;
                                     line-height: 16px;
-                                    // @media (max-width: 280px) {
-                                    //     font-size: 12px;
-                                    //     line-height: 18px;
-                                    // }
                                 }
                             }
                                                                     
@@ -114,41 +101,29 @@
                 }
             }
             .banner-image{
-                //border: 2px solid black;
-                position: relative;
+                margin: 0;
+                padding: 0;
                 .banner-image__img{
-                    width: 100%;
+                    width: 92%;
                     z-index: 1;
-                    opacity: 0.8;
-                    animation: move-image 3s ease-in-out 3s infinite;
+                    position: relative;
+                    bottom: -20px;
+                    // animation: move-image 3s ease-in-out 3s infinite;
                     @keyframes move-image {
                         0%{
-                            transform: translateY(5px);
+                            transform: translateY(2px);
                             transition: 2s ease;
                         }
                         50%{
-                            transform: translateY(-5px);
+                            transform: translateY(-2px);
                             transition: 2s ease;
                         }
                         100%{
-                            transform: translateY(5px);
+                            transform: translateY(2px);
                             transition: 2s ease;
                         }
                     }
 
-                }
-                .banner-image__arriere{
-                    width: 45rem;
-                    height: 25rem;
-                    display: none;
-                    &.banner-image__arriere--style{
-                        background-color: $color-yellow;
-                        border-radius: 100%;
-                        position: absolute;
-                        top: 25rem;
-                        transform: rotate(-30deg);
-                        opacity: 0.3;
-                    }
                 }
             }
         }

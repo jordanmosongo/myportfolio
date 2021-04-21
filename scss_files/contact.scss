@@ -47,28 +47,6 @@
                         color: $color-white;
                     }
                 }
-                .contact__info__adresse{
-                    font-size: 20px;
-                    address{                        
-                        margin: 10px 0;
-                        @media (max-width: 768px) {
-                            color: $color-white;
-                        }
-                        i{
-                            color: $color-yellow;
-                        }
-                    }
-                    a{
-                        text-decoration: none;
-                        color: $color-blue;                        
-                        @media (max-width: 768px) {
-                            color: $color-white;
-                        }
-                        i{
-                            color: $color-yellow;
-                        }
-                    }
-                }
                 .contact__info__list{
                     margin: 20px 0;
                     li{
@@ -76,13 +54,35 @@
                         text-decoration: none;
                         list-style: none;
                         a{                                                                 
-                            font-size: 20px;
+                            font-size: 25px;
                             color: $color-blue;
-                            &:hover{
-                                transform: scale(1.2px);
-                                transition: .3s ease-in-out;
-
+                            margin-right: 20px;
+                            @media (max-width:768px) {
+                                color: $color-white;
                             }
+                           
+                        }
+                    }
+                }
+                .contact__info__adresse{
+                    .info__adresse{
+                        color: $color-blue;
+                        @media (max-width:768px) {
+                            color: $color-white;
+                        }
+                        i{
+                            color: $color-yellow;
+                            margin-right: 20px ;
+                        }
+                    }
+                    a{
+                        color: $color-blue;
+                        @media (max-width:768px) {
+                            color: $color-white;
+                        }
+                        i{
+                            color: $color-yellow;
+                            margin-right: 20px;
                         }
                     }
                 }
