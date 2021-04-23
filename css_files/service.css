@@ -24,7 +24,7 @@
 .service .service__titre::before {
   content: "";
   width: 100%;
-  height: 7px;
+  height: 5px;
   background: -webkit-linear-gradient(45deg, #ffffff 46%, #ff9100 0%);
   position: absolute;
   left: 0;

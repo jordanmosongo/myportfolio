@@ -35,7 +35,7 @@
 .about .tablet-and-up-container .about__title h2::before {
   content: "";
   width: 100%;
-  height: 7px;
+  height: 5px;
   background: -webkit-linear-gradient(45deg, #ffffff 46%, #ff9100 0%);
   position: absolute;
   left: 0;

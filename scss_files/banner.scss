@@ -98,25 +98,11 @@
         margin: 0;
         padding: 0;
         .banner-image__img {
-          width: 92%;
+          width: 90%;
           z-index: 1;
           position: relative;
-          bottom: -20px;
-          // animation: move-image 3s ease-in-out 3s infinite;
-          @keyframes move-image {
-            0% {
-              transform: translateY(2px);
-              transition: 2s ease;
-            }
-            50% {
-              transform: translateY(-2px);
-              transition: 2s ease;
-            }
-            100% {
-              transform: translateY(2px);
-              transition: 2s ease;
-            }
-          }
+          bottom: -15px;
+          opacity: 0.9;
         }
       }
     }

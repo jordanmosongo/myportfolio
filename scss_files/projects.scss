@@ -93,7 +93,7 @@
           }
         }
         .card-link {
-          background-color: #ff9100;
+          background-color: #c8e3ff;
           opacity: 0.7;
           position: absolute;
           top: 0;
@@ -112,8 +112,11 @@
             .card-image__link {
               @include text-appearance($color-blue);
               font-weight: bolder;
-              font-size: 70px;
+              font-size: 30px;
               cursor: pointer;
+              i {
+                margin: 0 5px;
+              }
             }
           }
         }

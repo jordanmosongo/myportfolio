@@ -1,15 +1,12 @@
-//skill variables
 let description = document.getElementById("text-descriptif");
 let telephone = document.getElementById("telephone");
 let facebook = document.getElementById("facebook");
 let firstRowOfSkills = document.getElementById("first-row-of-skills");
 let secondRowOfSkills = document.getElementById("second-row-of-skills");
-//project variables
 let projectContainer = document.getElementById("projects-container");
 let secondProjectContainer = document.getElementById(
   "projects-container-second"
 );
-
 function createSkill(parent, skillTechnology, skillImage) {
   let skillContainer = document.createElement("div");
   let firstBloc = document.createElement("div");
@@ -58,10 +55,13 @@ const createCardLink = (lienSite, index) => {
   let lien = document.createElement("a");
   lien.classList.add("card-image__link");
   lien.setAttribute("href", `${lienSite}`);
-  lien.textContent = "visiter";
+  let iconLink = document.createElement("i");
+  iconLink.classList.add("fas", "fa-link");
+  let iconGit = document.createElement("i");
+  iconGit.classList.add("fab", "fa-github");
+  lien.append(iconLink, iconGit);
   cardLink[index].appendChild(lien);
 };
-
 function createProject(project, index) {
   const { title, description, image, technologies, lienSite } = project;
   createCardImage(image, index);
@@ -70,19 +70,6 @@ function createProject(project, index) {
   cardAction[index].appendChild(createCardAction(technologies));
   createCardLink(lienSite, index);
 }
-
-//getting identity
-//fetch("https://my-json-server.typicode.com/jordanmosongo/portfolio/identity")
-fetch("http://localhost:3000/identity")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    telephone.textContent = data.telephone;
-    facebook.setAttribute("href", data.facebook);
-  })
-  .catch((err) => console.log(err));
-//getting skills
 //fetch("https://my-json-server.typicode.com/jordanmosongo/portfolio/skills")
 fetch("http://localhost:3000/skills")
   .then((response) => {
@@ -108,15 +95,12 @@ fetch("http://localhost:3000/skills")
     }
   })
   .catch((err) => console.log(err));
-//getting projects
+
 fetch("http://localhost:3000/projects")
   .then((response) => {
     return response.json();
   })
   .then((projects) => {
-    // projects.forEach((project) => {
-    //   createProject(project);
-    // });
     projects.map((project, index) => {
       createProject(project, index);
     });

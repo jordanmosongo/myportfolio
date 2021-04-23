@@ -1,17 +1,18 @@
 window.onscroll = () => {
   let scrollPoint =
     document.body.scrollTop || document.documentElement.scrollTop;
-
   if (scrollPoint <= 799) {
     activateLinkOnScroll(0);
   } else if (scrollPoint >= 800 && scrollPoint <= 1915) {
     activateLinkOnScroll(1);
-  } else if (scrollPoint >= 1916 && scrollPoint <= 3047) {
+  } else if (scrollPoint >= 1916 && scrollPoint <= 2718) {
     activateLinkOnScroll(2);
-  } else if (scrollPoint >= 3050 && scrollPoint <= 4099) {
+  } else if (scrollPoint >= 2720 && scrollPoint <= 3320) {
     activateLinkOnScroll(3);
-  } else if (scrollPoint > 4099) {
+  } else if (scrollPoint >= 3325 && scrollPoint <= 4040) {
     activateLinkOnScroll(4);
+  } else if (scrollPoint >= 4045) {
+    activateLinkOnScroll(5);
   }
 };
 function activateLinkOnScroll(i) {
@@ -77,7 +78,6 @@ let cardProjects = document.getElementsByClassName("card");
 for (let i = 0; i < cardProjects.length; i++) {
   cardProjects[i].addEventListener("mouseenter", (event) => {
     event.preventDefault();
-    console.log(cardLinks);
     cardLinks[i].style.display = "inherit";
   });
   cardProjects[i].addEventListener("mouseleave", (event) => {
@@ -85,16 +85,3 @@ for (let i = 0; i < cardProjects.length; i++) {
     cardLinks[i].style.display = "none";
   });
 }
-
-// {
-//     "title" : "Formulaire de contact",
-//     "description" : "Une application frontEnd qui gère les contacts",
-//     "image" : "../images/realisation/formulaireOne.png",
-//     "technologies" : [
-//         "Html5",
-//         "css3",
-//         "javascript"
-//     ],
-//     "lienSite" : "https://lien-vers-le-site.com",
-//     "lienGitHub" : "https://lien-vers-le-repo-git"
-// }

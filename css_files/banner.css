@@ -185,24 +185,11 @@
   padding: 0;
 }
 .banner .container .container__row .banner-image .banner-image__img {
-  width: 92%;
+  width: 90%;
   z-index: 1;
   position: relative;
-  bottom: -20px;
-}
-@keyframes move-image {
-  0% {
-    transform: translateY(2px);
-    transition: 2s ease;
-  }
-  50% {
-    transform: translateY(-2px);
-    transition: 2s ease;
-  }
-  100% {
-    transform: translateY(2px);
-    transition: 2s ease;
-  }
+  bottom: -15px;
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=banner.css.map */
