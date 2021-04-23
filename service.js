@@ -70,8 +70,8 @@ function createProject(project, index) {
   cardAction[index].appendChild(createCardAction(technologies));
   createCardLink(lienSite, index);
 }
-//fetch("https://my-json-server.typicode.com/jordanmosongo/portfolio/skills")
-fetch("http://localhost:3000/skills")
+//fetch("http://localhost:3000/skills")
+fetch("https://my-json-server.typicode.com/jordanmosongo/portfolio/skills")
   .then((response) => {
     return response.json();
   })
@@ -96,7 +96,8 @@ fetch("http://localhost:3000/skills")
   })
   .catch((err) => console.log(err));
 
-fetch("http://localhost:3000/projects")
+//fetch("http://localhost:3000/projects")
+fetch("https://my-json-server.typicode.com/jordanmosongo/portfolio/projects")
   .then((response) => {
     return response.json();
   })

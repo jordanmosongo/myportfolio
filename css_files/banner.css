@@ -185,7 +185,7 @@
   padding: 0;
 }
 .banner .container .container__row .banner-image .banner-image__img {
-  width: 90%;
+  width: 100%;
   z-index: 1;
   position: relative;
   bottom: -15px;
