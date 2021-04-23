@@ -7,7 +7,7 @@
 }
 
 .contact {
-  background-color: #4a4b70;
+  background-color: #3c3d71;
   position: relative;
   overflow: hidden;
   padding: 80px 0;
@@ -42,11 +42,11 @@
 @media (max-width: 768px) {
   .contact .container .contact__info {
     width: 100%;
-    background-color: #4a4b70;
+    background-color: #3c3d71;
   }
 }
 .contact .container .contact__info .contact__info__title span {
-  color: #4a4b70;
+  color: #3c3d71;
   font-family: "Roboto", sans-serif;
   font-size: 2.5em;
   position: relative;
@@ -123,7 +123,7 @@
 }
 .contact .container .contact__info .contact__info__block .contact__info__list li a {
   font-size: 25px;
-  color: #4a4b70;
+  color: #3c3d71;
   margin-right: 20px;
 }
 @media (max-width: 768px) {
@@ -132,7 +132,7 @@
   }
 }
 .contact .container .contact__info .contact__info__block .contact__info__adresse .info__adresse {
-  color: #4a4b70;
+  color: #3c3d71;
 }
 @media (max-width: 768px) {
   .contact .container .contact__info .contact__info__block .contact__info__adresse .info__adresse {
@@ -144,7 +144,7 @@
   margin-right: 20px;
 }
 .contact .container .contact__info .contact__info__block .contact__info__adresse a {
-  color: #4a4b70;
+  color: #3c3d71;
 }
 @media (max-width: 768px) {
   .contact .container .contact__info .contact__info__block .contact__info__adresse a {
@@ -165,7 +165,7 @@
   }
 }
 .contact .container .contact__form .contact__form__title span {
-  color: #4a4b70;
+  color: #3c3d71;
   font-family: "Roboto", sans-serif;
   font-size: 2.5em;
   position: relative;
@@ -199,7 +199,7 @@
 }
 .contact .container .contact__form .form-content .form-group label {
   font-size: 22px;
-  color: #4a4b70;
+  color: #3c3d71;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
@@ -228,7 +228,7 @@
   color: #2a2527;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  border-bottom: 2px solid #4a4b70;
+  border-bottom: 2px solid #3c3d71;
 }
 @media (min-width: 768px) and (max-width: 1420px) {
   .contact .container .contact__form .form-content .form-group input {
@@ -257,7 +257,7 @@
 .contact .container .contact__form .form-content .form-group textarea {
   height: 3em;
   border: none;
-  border-bottom: 2px solid #4a4b70;
+  border-bottom: 2px solid #3c3d71;
   font-size: 22px;
   color: #2a2527;
   font-family: "Roboto", sans-serif;
@@ -288,7 +288,7 @@
   border-bottom: 2px solid #ff9100;
 }
 .contact .container .contact__form .form-button .bouton {
-  background-color: #4a4b70;
+  background-color: #3c3d71;
   color: #ffffff;
   font-size: 22px;
   font-family: "Heebo", sans-serif;

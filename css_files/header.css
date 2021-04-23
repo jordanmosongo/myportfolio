@@ -12,7 +12,7 @@
   z-index: 99;
 }
 .navbar.navbar--color {
-  background-color: #4a4b70;
+  background-color: #3c3d71;
 }
 .navbar .nav-wrapper .brand-logo--color {
   color: #ff9100;
@@ -46,14 +46,14 @@
 }
 
 .sidenav {
-  background-color: #4a4b70;
+  background-color: #3c3d71;
   height: 50%;
   padding-top: 20px;
   margin-top: 63px;
   transition: 0.4s ease-in-out;
 }
 .sidenav .sidenav__element {
-  background-color: #4a4b70;
+  background-color: #3c3d71;
 }
 .sidenav .sidenav__element a {
   font-family: "Roboto", sans-serif;

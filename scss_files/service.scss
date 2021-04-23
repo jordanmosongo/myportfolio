@@ -1,79 +1,105 @@
-@import '../main.scss';
-.service{
-    padding: 30px 0;
-    background-color: #4a4b70;
-    position: relative;
-    @include flex-two();
-    .service__titre{
-       @include sub-title($color-white, $color-white);
-    }   
-    .service__content{
-        @include flex-one();
-        justify-content: space-between;
-        @media (max-width:767px) {
-            @include flex-two();
-        }
-        .service__element{
-            padding: 30px 10px;
-            width: 30%;
-            border-radius: 5px;
-            background-color: $color-white;
-            margin-bottom: 30px;
-            box-shadow: 5px 5px 5px $color-gray;
-            text-align: center;
-            @media (max-width:768px) {
-                width: 100%;
-            }
-            @media (min-width:992px) and (max-width : 1400px) {
-                width: 31%;                 
-            }
-            @media (min-width:768px) and (max-width : 992px) {
-                width: 32%;                 
-            }
-            
-            i{
-                font-size: 50px;
-                color: $color-yellow;
-                @media (max-width:540px) {
-                    font-size: 30px;
-                }
-            }
-            h3{
-                font-size: 28px;
-                color: $color-blue;
-                font-family: $family-roboto;
-                @media (max-width:540px) {
-                    font-size: 20px;
-                }
-                @media (min-width:992px) and (max-width : 1400px) {
-                    font-size: 22px;  
-                    @media (max-width:1076px) {
-                        font-size: 20px;  
-                    }                 
-                }
-                @media (min-width:768px) and (max-width : 992px) {
-                    font-size: 19px;                
-                }
-            }
-            p{
-                font-size: 20px;
-                color: $color-gray;
-                font-family: $family-roboto;
-                @media (max-width:540px) {
-                    font-size: 16px;
-                }
-                @media (min-width:992px) and (max-width : 1400px) {
-                    font-size: 17px;    
-                    @media (max-width:1076px) {
-                        font-size: 15px;  
-                    }               
-                }
-                @media (min-width:768px) and (max-width : 992px) {
-                    font-size: 15px;                
-                }
-                
-            }
-            
-        }
+@import "../main.scss";
+@mixin movingService($pixel) {
+  @keyframes moveService {
+    0% {
+      transform: translateY($pixel);
+      transition: 0.7s ease;
     }
+    50% {
+      transform: translateY(0);
+      transition: 0.7s ease;
+    }
+    100% {
+      transform: translateY($pixel);
+      transition: 0.7s ease;
+    }
+  }
+}
+.service {
+  padding: 30px 0;
+  background-color: $color-blue;
+  position: relative;
+  @include flex-two();
+  .service__titre {
+    @include sub-title($color-white, $color-white);
+  }
+  .service__content {
+    @include flex-one();
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      @include flex-two();
+    }
+    .service__element__one {
+      animation: moveService 2s ease-in-out 2.5s infinite;
+      @include movingService(6px);
+    }
+    .service__element__two {
+      animation: moveService 2.5s ease-in 2s infinite;
+      @include movingService(9px);
+    }
+    .service__element__three {
+      animation: moveService 2s ease-in-out 2.5s infinite;
+      @include movingService(6px);
+    }
+    .service__element {
+      padding: 30px 10px;
+      width: 30%;
+      border-radius: 5px;
+      background-color: $color-white;
+      margin-bottom: 30px;
+      box-shadow: 5px 5px 5px $color-gray;
+      text-align: center;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      @media (min-width: 992px) and (max-width: 1400px) {
+        width: 31%;
+      }
+      @media (min-width: 768px) and (max-width: 992px) {
+        width: 32%;
+      }
+
+      i {
+        font-size: 50px;
+        color: $color-yellow;
+        @media (max-width: 540px) {
+          font-size: 30px;
+        }
+      }
+      h3 {
+        font-size: 28px;
+        color: $color-blue;
+        font-family: $family-roboto;
+        @media (max-width: 540px) {
+          font-size: 20px;
+        }
+        @media (min-width: 992px) and (max-width: 1400px) {
+          font-size: 22px;
+          @media (max-width: 1076px) {
+            font-size: 20px;
+          }
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+          font-size: 19px;
+        }
+      }
+      p {
+        font-size: 20px;
+        color: $color-gray;
+        font-family: $family-roboto;
+        @media (max-width: 540px) {
+          font-size: 16px;
+        }
+        @media (min-width: 992px) and (max-width: 1400px) {
+          font-size: 17px;
+          @media (max-width: 1076px) {
+            font-size: 15px;
+          }
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
 }

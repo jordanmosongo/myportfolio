@@ -18,13 +18,14 @@
   background-color: #ffffff;
   border: 7px solid #ff9100;
   transform: rotate(15deg);
-  background-color: #4a4b70;
+  background-color: #3c3d71;
   right: -4em;
   top: -9.5em;
 }
 @media (max-width: 768px) {
   .footer .footer__second-corner {
     height: 5em;
+    width: 15em;
   }
 }
 .footer .footer__container {

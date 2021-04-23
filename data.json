@@ -42,78 +42,41 @@
     ],
     "projects" : [
         {
-            "title" : "Reproduction du site de la Kinshasa digitale",
-            "image" : "../images/realisation/kda.png",
+            "title" : "Kinshasa digitale",
+            "description" : "Reproduction du site de l'agence kinshasa digitale",
+            "image" : "../images/realisation/projetkda.png",
             "technologies" : [
                 "Html5",
-                "css3"
+                "css3 pure"
             ],
-            "lienSite" : "https://lien-vers-le-site.com",
+            "lienSite" : "https://jordanmosongo.github.io/reproduction/",
             "lienGitHub" : "https://lien-vers-le-repo-git"
         },
         {
-            "title" : "Mon portfolio",
-            "image" : "../images/realisation/portfolio2.png",
+            "title" : "Portfolio",
+            "description" : "Un site biographe qui retrace toutes mes oeuvres",
+            "image" : "../images/realisation/portfolio.png",
             "technologies" : [
                 "Html5",
-                "css3",
                 "saas",
-                "json",
                 "javascript"
             ],
             "lienSite" : "https://lien-vers-le-site.com",
             "lienGitHub" : "https://lien-vers-le-repo-git"
         },
         {
-            "title" : "Un formulaire de contact",
-            "image" : "../images/realisation/lupitadji.png",
-            "technologies" : [
-                "Html5",
-                "css3",
-                "javascript"
-            ],
-            "lienSite" : "https://lien-vers-le-site.com",
-            "lienGitHub" : "https://lien-vers-le-repo-git"
-        },
-        {
-            "title" : "Mon portfolio",
-            "image" : "../images/realisation/portfolio2.png",
-            "technologies" : [
-                "Html5,",
-                "css3,",
-                "saas,",
-                "json,",
-                "javascript"
-            ],
-            "lienSite" : "https://lien-vers-le-site.com",
-            "lienGitHub" : "https://lien-vers-le-repo-git"
-        },
-        {
-            "title" : "Mon portfolio",
-            "image" : "../images/realisation/portfolio2.png",
-            "technologies" : [
-                "Html5,",
-                "css3,",
-                "saas,",
-                "json,",
-                "javascript"
-            ],
-            "lienSite" : "https://lien-vers-le-site.com",
-            "lienGitHub" : "https://lien-vers-le-repo-git"
-        },
-        {
-            "title" : "Mon portfolio",
-            "image" : "../images/realisation/portfolio2.png",
-            "technologies" : [
-                "Html5,",
-                "css3,",
-                "saas,",
-                "json,",
-                "javascript"
-            ],
-            "lienSite" : "https://lien-vers-le-site.com",
-            "lienGitHub" : "https://lien-vers-le-repo-git"
-        }
+    "title" : "Formulaire de contact",
+    "description" : "Une application frontEnd qui gère les contacts",
+    "image" : "../images/realisation/formulaireOne.png",
+    "technologies" : [
+        "Html5",
+        "css3",
+        "javascript"
+    ],
+    "lienSite" : "https://lien-vers-le-site.com",
+    "lienGitHub" : "https://lien-vers-le-repo-git"
+}
+        
     ],
     "visitors" : [
         {

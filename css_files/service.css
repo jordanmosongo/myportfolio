@@ -8,7 +8,7 @@
 
 .service {
   padding: 30px 0;
-  background-color: #4a4b70;
+  background-color: #3c3d71;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -53,6 +53,57 @@
     align-items: center;
   }
 }
+.service .service__content .service__element__one {
+  animation: moveService 2s ease-in-out 2.5s infinite;
+}
+@keyframes moveService {
+  0% {
+    transform: translateY(6px);
+    transition: 0.7s ease;
+  }
+  50% {
+    transform: translateY(0);
+    transition: 0.7s ease;
+  }
+  100% {
+    transform: translateY(6px);
+    transition: 0.7s ease;
+  }
+}
+.service .service__content .service__element__two {
+  animation: moveService 2.5s ease-in 2s infinite;
+}
+@keyframes moveService {
+  0% {
+    transform: translateY(9px);
+    transition: 0.7s ease;
+  }
+  50% {
+    transform: translateY(0);
+    transition: 0.7s ease;
+  }
+  100% {
+    transform: translateY(9px);
+    transition: 0.7s ease;
+  }
+}
+.service .service__content .service__element__three {
+  animation: moveService 2s ease-in-out 2.5s infinite;
+}
+@keyframes moveService {
+  0% {
+    transform: translateY(6px);
+    transition: 0.7s ease;
+  }
+  50% {
+    transform: translateY(0);
+    transition: 0.7s ease;
+  }
+  100% {
+    transform: translateY(6px);
+    transition: 0.7s ease;
+  }
+}
 .service .service__content .service__element {
   padding: 30px 10px;
   width: 30%;
@@ -88,7 +139,7 @@
 }
 .service .service__content .service__element h3 {
   font-size: 28px;
-  color: #4a4b70;
+  color: #3c3d71;
   font-family: "Roboto", sans-serif;
 }
 @media (max-width: 540px) {

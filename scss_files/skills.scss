@@ -6,11 +6,8 @@
         @include shape();
         left: -4em;
         bottom: -9.5em;
-        background-color: #4a4b70;
-        @media (max-width: 768px) {
-            // height: 5em;
-            // width: 5em;
-        }
+        background-color: $color-blue;
+      
     }
     .skills__content{  
         

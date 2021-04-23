@@ -7,9 +7,9 @@
 }
 
 .about.about--style {
-  background-color: #4a4b70;
+  background-color: #3c3d71;
   width: 100%;
-  background: -webkit-linear-gradient(45deg, #ff9100 50%, #4a4b70 0%);
+  background: -webkit-linear-gradient(45deg, #ff9100 50%, #3c3d71 0%);
 }
 .about .tablet-and-up-container {
   padding-top: 50px;
@@ -52,7 +52,7 @@
   }
 }
 .about .tablet-and-up-container .about__title h2::before {
-  background: -webkit-linear-gradient(45deg, #ffffff 46%, #4a4b70 0%);
+  background: -webkit-linear-gradient(45deg, #ffffff 46%, #3c3d71 0%);
 }
 .about .tablet-and-up-container .about__title .technologies {
   position: absolute;
@@ -172,7 +172,7 @@
   }
   50% {
     transform: translateY(-5px);
-    color: #4a4b70;
+    color: #3c3d71;
     transition: 2s ease;
   }
   100% {
@@ -193,7 +193,7 @@
   cursor: pointer;
 }
 .about .tablet-and-up-container .about__text .about__text__bouton--style:hover {
-  box-shadow: 3px 5px #4a4b70;
+  box-shadow: 3px 5px #3c3d71;
 }
 @media (min-width: 768px) and (max-width: 1420px) {
   .about .tablet-and-up-container .about__text .about__text__bouton--style {
@@ -207,7 +207,7 @@
     padding: 8px 16px;
   }
   .about .tablet-and-up-container .about__text .about__text__bouton--style:hover {
-    box-shadow: 2px 3px #4a4b70;
+    box-shadow: 2px 3px #3c3d71;
   }
 }
 @media (max-width: 576px) {
@@ -223,7 +223,7 @@
 }
 .about .mobile-container {
   width: 100%;
-  background: -webkit-linear-gradient(45deg, #4a4b70 50%, #ff9100 0%);
+  background: -webkit-linear-gradient(45deg, #3c3d71 50%, #ff9100 0%);
 }
 @media (min-width: 768px) {
   .about .mobile-container {
@@ -254,7 +254,7 @@
   content: "";
   width: 100%;
   height: 5px;
-  background: -webkit-linear-gradient(45deg, #ffffff 46%, #4a4b70 0%);
+  background: -webkit-linear-gradient(45deg, #ffffff 46%, #3c3d71 0%);
   position: absolute;
   left: 0;
   top: 40px;
@@ -308,7 +308,7 @@
   }
   50% {
     transform: translateY(-5px);
-    color: #4a4b70;
+    color: #3c3d71;
     transition: 2s ease;
   }
   100% {

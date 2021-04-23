@@ -73,7 +73,7 @@
   transform: translateY(100%);
 }
 .banner .container .container__row .banner-text .banner-text__title div strong {
-  color: #4a4b70;
+  color: #3c3d71;
   font-weight: bolder;
   position: relative;
   font-size: 55px;
@@ -141,7 +141,7 @@
   }
 }
 .banner .container .container__row .banner-text .banner-text__bouton.banner-text__bouton--style {
-  background-color: #4a4b70;
+  background-color: #3c3d71;
   color: #ffffff;
   font-size: 22px;
   font-family: "Heebo", sans-serif;
