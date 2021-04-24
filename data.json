@@ -78,20 +78,6 @@
 }
         
     ],
-    "visitors" : [
-        {
-            "nom" : "first visitor",
-            "type" : "personne physique",
-            "email": "firstvisitor@gmail.com",
-            "telephone": "089234578",
-            "message":{
-                "sujet" : "Me soumettre un projet",
-                "contenu": "Salut, je suis content de visiter ce portfolio. J'ai un projet à vous soumettre.",
-                "urgence": true,
-                "delaiReponse": 3
-            }
-        }
-    ],
     "newsletter": [
         {
             "email" : "firstemail@gmail.Com"
