@@ -191,5 +191,69 @@
   bottom: -15px;
   opacity: 0.9;
 }
+.banner .container .container__row .banner__modal {
+  border-radius: 10px 10px 0 0;
+}
+.banner .container .container__row .banner__modal h3 {
+  background-color: #3c3d71;
+  color: #ffffff;
+  font-size: 27px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+.banner .container .container__row .banner__modal h3 i {
+  color: #ff9100;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.banner .container .container__row .banner__modal .banner__modal__content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 10px 10px 10px;
+}
+@media (max-width: 768px) {
+  .banner .container .container__row .banner__modal .banner__modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.banner .container .container__row .banner__modal .banner__modal__content .scolarite,
+.banner .container .container__row .banner__modal .banner__modal__content .formation,
+.banner .container .container__row .banner__modal .banner__modal__content .autre {
+  text-align: center;
+  padding: 10px;
+  width: 32.5%;
+}
+@media (max-width: 768px) {
+  .banner .container .container__row .banner__modal .banner__modal__content .scolarite,
+.banner .container .container__row .banner__modal .banner__modal__content .formation,
+.banner .container .container__row .banner__modal .banner__modal__content .autre {
+    width: 100%;
+  }
+}
+.banner .container .container__row .banner__modal .banner__modal__content .scolarite i,
+.banner .container .container__row .banner__modal .banner__modal__content .formation i,
+.banner .container .container__row .banner__modal .banner__modal__content .autre i {
+  color: #ff9100;
+  font-size: 40px;
+}
+.banner .container .container__row .banner__modal .banner__modal__content .scolarite h4,
+.banner .container .container__row .banner__modal .banner__modal__content .formation h4,
+.banner .container .container__row .banner__modal .banner__modal__content .autre h4 {
+  color: #3c3d71;
+  font-size: 25px;
+}
+.banner .container .container__row .banner__modal .banner__modal__content .scolarite p,
+.banner .container .container__row .banner__modal .banner__modal__content .formation p,
+.banner .container .container__row .banner__modal .banner__modal__content .autre p {
+  color: #2a2527;
+  font-size: 16px;
+}
 
 /*# sourceMappingURL=banner.css.map */

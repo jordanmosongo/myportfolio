@@ -7,16 +7,14 @@
 }
 
 .photo {
-  padding: 0;
   position: relative;
   background-color: #3c3d71;
+  box-sizing: content-box;
   position: relative;
 }
 .photo img {
   width: 100%;
-  opacity: 0.5;
-  margin: 0;
-  padding: 0;
+  opacity: 0.6;
 }
 .photo h2 {
   color: #ffffff;

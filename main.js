@@ -85,3 +85,4 @@ for (let i = 0; i < cardProjects.length; i++) {
     cardLinks[i].style.display = "none";
   });
 }
+function closeModal() {}

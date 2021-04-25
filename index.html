@@ -62,15 +62,46 @@
             </div>
           </h1>
           
-          <p class="banner-text__description banner-text__description--style">Développeur fullstack, passionné par le data science
-            et la cybersécurité</p>
-          <button class="banner-text__bouton banner-text__bouton--style">plus sur moi</button>
+          <p class="banner-text__description banner-text__description--style">Développeur fullstack, passionné par l'intelligence artificielle
+            et les réseaux informatiques.
+          </p>
+          <a class="banner-text__bouton banner-text__bouton--style modal-trigger" href="#modal">plus sur moi</a>
         </div>
         <div class="col m6 l6 s6 banner-image" >
           <img src="images/jm.png" alt="photo d'acceuil" class="banner-image__img">
         </div>
+        <div class="banner__modal modal" id="modal">
+          <h3 class="banner__modal__titre">
+            Plus sur moi
+            <i class="fas fa-times-circle" onclick="closeModal()"></i>
+          </h3>
+          <div class="banner__modal__content">
+            <div class="scolarite">
+              <i class="fas fa-graduation-cap"></i>
+              <h4>Scolarité</h4>
+              <p>Je suis gradué en Informatique à l'Université de Kinshasa. 
+                Je poursuis mes études de licence dans la filière de Génie Informatique
+                dans la même université.
+              </p>
+            </div>           
+            <div class="formation">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <h4>Formation</h4>
+              <p>Apprenant développeur à la Kinshasa digitale académie, cohorte
+                2021. En outre, j'ai fait une formation cisco portant sur le module
+                IT et CCNA1.
+              </p>
+            </div>
+            <div class="autre">
+              <i class="fas fa-globe"></i>
+              <h4>Langues</h4>
+              <p>Je parle fréquemment le français, l'anglais et lingala</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      
+    </div>    
   </section>  
   <section class="about about--style .hide-on-small" id="about">
     <div class="container tablet-and-up-container">
