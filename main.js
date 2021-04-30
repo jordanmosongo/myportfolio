@@ -1,20 +1,7 @@
-window.onscroll = () => {
-  let scrollPoint =
-    document.body.scrollTop || document.documentElement.scrollTop;
-  if (scrollPoint <= 799) {
-    activateLinkOnScroll(0);
-  } else if (scrollPoint >= 800 && scrollPoint <= 1915) {
-    activateLinkOnScroll(1);
-  } else if (scrollPoint >= 1916 && scrollPoint <= 2718) {
-    activateLinkOnScroll(2);
-  } else if (scrollPoint >= 2720 && scrollPoint <= 3320) {
-    activateLinkOnScroll(3);
-  } else if (scrollPoint >= 3325 && scrollPoint <= 4040) {
-    activateLinkOnScroll(4);
-  } else if (scrollPoint >= 4045) {
-    activateLinkOnScroll(5);
-  }
-};
+// window.onscroll = () => {
+//   let scrollPoint =
+//     document.body.scrollTop || document.documentElement.scrollTop;
+// };
 function activateLinkOnScroll(i) {
   let itemsLink = document.getElementsByClassName("menu-link__item");
   for (let itemLink of itemsLink) {

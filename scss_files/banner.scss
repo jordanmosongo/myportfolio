@@ -106,7 +106,6 @@
         }
       }
       .banner__modal {
-        border-radius: 10px 10px 0 0;
         h3 {
           background-color: $color-blue;
           color: $color-white;
@@ -114,12 +113,6 @@
           padding: 10px;
           position: relative;
           text-align: center;
-          i {
-            color: $color-yellow;
-            position: absolute;
-            right: 10px;
-            cursor: pointer;
-          }
         }
         .banner__modal__content {
           @include flex-one();
